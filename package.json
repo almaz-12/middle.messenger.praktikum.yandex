@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.hbs --no-cache --open --port 3000",
-    "build": "parcel build index.hbs",
+    "build": "parcel build src/index.hbs",
     "start": "npm run build"
   },
   "engine": {
