@@ -1,14 +1,8 @@
-### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main. 
-
-### Например, задания для проектной работы во втором спринте вы делаете в ветке sprint_2. Открываете из неё pull request в ветку main. Ссылку на этот pr добавляете в README.md в ветке main. После этого на платформе Практикума нажимаете «Проверить задание».
 ### Описание
-
+    Учебный проект - веб-мессенджер - на курсе middle frontend developer от yandex practicum
 
 ### Макет Figma 
     - https://www.figma.com/file/DI8nTI3hYHrl9FiFTWuoiK/Messenger-Yandex
-
-### Ссылка на pull-request
-    ...    
 
 ## Установка
     - `npm i` — установка зависимостей,
