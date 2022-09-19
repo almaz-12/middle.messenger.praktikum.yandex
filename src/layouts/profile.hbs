@@ -1,0 +1,23 @@
+{{#extend "base"}}
+    {{#content "body"}}
+        <section class="profile">
+            <aside class="profile-sidebar">
+                <a class="profile-sidebar__link" href="./chat.hbs">
+                    <div class="profile-sidebar__img-box">
+                        <img
+                            class="profile-sidebar__img"
+                            src="../../static/images/icons/arrow-back.svg"
+                            alt="Вернуться к чатам"
+                        />
+                    </div>
+                </a>
+            </aside>
+            <div class="profile-info">
+                <div class="profile-info__avatar">
+                    {{> avatar}}
+                </div>  
+                {{{block "profile-content"}}}
+            </div>
+        </section>
+    {{/content}}
+{{/extend}}

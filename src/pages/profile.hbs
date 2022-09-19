@@ -1,0 +1,36 @@
+{{#extend "profile"}}
+    {{#content "profile-content"}}
+        <h1 class="profile-info__name profile-name">Иван</h1>
+        {{> profile-data profileData.data}}
+        <div class="profile-actions">
+            <table class="profile-data">
+                <tbody>
+                    <tr>
+                        <td class="profile-data__label">          
+                            {{> link label="Изменить данные" href="/" class="link--font-size"}} 
+                        </td>
+                        <td class="profile-data__value">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="profile-data__label">          
+                            {{> link label="Изменить пароль" href="/" class="link--font-size"}} 
+                        </td>
+                        <td class="profile-data__value">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="profile-data__label">          
+                            {{> link label="Выйти" href="/" class="link--font-size link--red"}} 
+                        </td>
+                        <td class="profile-data__value">
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    {{/content}}
+{{/extend}}

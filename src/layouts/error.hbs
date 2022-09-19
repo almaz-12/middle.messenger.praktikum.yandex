@@ -1,0 +1,9 @@
+{{#extend "base"}}
+    {{#content "body"}}
+        <div class="error-page">
+            <h1 class="error-page__code">{{this.code}}</h1>
+            <p class="error-page__message">{{this.message}}</p>
+            {{> link label="Назад к чатам" href="/"}} 
+        </div>
+    {{/content}}
+{{/extend}}

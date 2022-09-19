@@ -1,0 +1,53 @@
+.field {
+    position: relative;
+
+    & + .field {
+        margin-top: 25px;
+    }
+    
+    &__label {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        z-index: 1;
+        display: block;
+        color: #999999;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 13px;
+    }
+    
+    &__input {
+        width: 100%;
+        padding: 7px 0 7px 0;
+        border: none;
+        color: #1E1E1E;
+        border-bottom: 1px solid #3369F3;
+        font-size: 13px;
+        line-height: 13px;
+
+        &:focus{
+            outline: none;
+        }
+
+        &:focus ~ label {
+            bottom: 31px;
+            font-size: 9px;
+        }
+        &:not(:focus) ~ label {
+            bottom: 11px;
+        }
+    }
+
+    &__error {
+        display: none;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 8px; 
+        color: #FF2F2F;
+
+        &.active {
+            display: block;
+        }
+    }
+}
