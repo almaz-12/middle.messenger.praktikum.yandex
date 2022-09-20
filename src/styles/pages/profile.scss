@@ -60,7 +60,7 @@
     border-collapse: collapse;
   
     tr {
-      border-bottom: 1px solid #eaeaea;
+      border-bottom: 1px solid $border-color;
     }
   
     tr {
@@ -88,7 +88,7 @@
 
     &__label {
       font-weight: 500;
-      color: #1E1E1E;
+      color: $text-main-color;
     }
 
     &__input {

@@ -3,7 +3,7 @@
     @extend %vh-centered;
     width: 130px;
     height: 130px;
-    background: #EFEFEF;
+    background: $input-color;
     border-radius: 100%;
     overflow: hidden;
     cursor: pointer;

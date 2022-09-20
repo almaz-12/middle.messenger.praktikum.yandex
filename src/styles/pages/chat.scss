@@ -9,7 +9,7 @@
     height: 100%;
     background: #fbfbfb;
     overflow-y: auto;
-    border-right: 1px solid #eaeaea;
+    border-right: 1px solid $border-color;
     scrollbar-width: none;
 
     &::-webkit-scrollbar {
@@ -29,7 +29,7 @@
       margin-left: auto;
       font-size: 12px;
       line-height: 12px;
-      color: #5f5f5f;
+      color: $text-second-color;
       text-decoration: none;
     }
 
@@ -38,17 +38,17 @@
       border-radius: 5px;
       font-size: 12px;
       line-height: 12px;
-      color: #1e1e1e;
+      color: $text-main-color;
       border: none;
       outline: none;
-      background-color: #efefef;
+      background-color: $input-color;
       background-image: url("../../static/images/icons/search.svg");
       background-repeat: no-repeat;
       background-size: 20px 20px;
       background-position: 8px 4px;
 
       &::placeholder {
-        color: #5f5f5f;
+        color: $text-second-color;
       }
 
       &:placeholder-shown {
@@ -71,11 +71,11 @@
   flex-grow: 1;
 
   &-item {
-    color: #1e1e1e;
+    color: $text-main-color;
     font-size: 12px;
     line-height: 15px;
     padding: 8px 11px;
-    background: #efefef;
+    background: $input-color;
     width: fit-content;
     display: flex;
     border-radius: 0 10px 10px 10px;
@@ -86,14 +86,14 @@
     max-width: 50%;
 
     &--my-message {
-      background: #f7f5ff;
+      background: $my-message-color;
       border-radius: 10px 10px 0 10px;
       margin-right: 0;
       margin-left: auto;
     }
 
     &__image {
-      background-color: #eaeaea;
+      background-color: $border-color;
     }
 
     &__text {
@@ -101,7 +101,7 @@
     }
 
     &__time {
-      color: #5f5f5f;
+      color: $text-second-color;
       font-size: 9px;
       line-height: 9px;
       margin-left: 15px;
@@ -109,7 +109,7 @@
   }
 
   &-header {
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid $border-color;
     display: flex;
     align-items: center;
     padding-bottom: 10px;
@@ -118,7 +118,7 @@
       width: 47px;
       height: 47px;
       border-radius: 50%;
-      background: #EFEFEF;
+      background: $input-color;
       margin-right: 10px;
     }
 
@@ -126,7 +126,7 @@
       font-weight: 600;
       font-size: 13px;
       line-height: 13px;
-      color: #1E1E1E;
+      color: $text-main-color;
     }
     &__actions {
       margin-left: auto;
@@ -155,7 +155,7 @@
     display: block;
     font-size: 12px;
     line-height: 12px;
-    color: #5f5f5f;
+    color: $text-second-color;
     text-align: center;
     margin: 30px 0;
   }
@@ -169,7 +169,7 @@
   z-index: 10;
   display: none;
   padding: 10px 0;
-  background: #ffffff;
+  background: $bg-color;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
   border-radius: 12px;
 
@@ -207,7 +207,7 @@
     align-items: center;
     padding: 8px 15px;
     text-decoration: none;
-    color: #1e1e1e;
+    color: $text-main-color;
 
     &-img {
       margin-right: 15px;
@@ -231,7 +231,7 @@
   display: flex;
   align-items: center;
   padding-top: 10px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $border-color;
 
   &__attachment {
     background: transparent;
@@ -249,17 +249,17 @@
 
   &__field {
     flex-grow: 1;
-    background: #efefef;
+    background: $input-color;
     border-radius: 30px;
     font-size: 12px;
     line-height: 12px;
-    color: #1e1e1e;
+    color: $text-main-color;
     padding: 8px 20px;
     border: none;
     outline-style: none;
 
     &::placeholder {
-      color: #5f5f5f;
+      color: $text-second-color;
     }
   }
 
