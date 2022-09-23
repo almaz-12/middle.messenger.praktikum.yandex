@@ -1,0 +1,86 @@
+{{#extend "base"}}
+    {{#content "body"}}
+    <section class="chat">
+        <section class="chat-sidebar">
+            <div class="chat-sidebar__top">
+                <a class="chat-sidebar__link" href="./profile.hbs">Профиль ></a>
+                <input class="chat-sidebar__search-input" placeholder="Поиск" />
+            </div>
+            <div class="chat__list">
+                {{#each chat.chats}}
+                    {{> chat-item }}
+                {{/each}}
+            </div>
+        </section>
+        <section class="messages">
+            <div class="messages-header">
+                <div class="messages-header__avatar"></div>
+                <div class="messages-header__name">Вадим</div>
+                <div class="messages-header__actions">
+                    <button class="messages-header__actions-btn">
+                        <img src="../../static/images/icons/dotted.svg" alt="Меню"/>
+                    </button>
+                    <div class="dropdown dropdown--top-right">
+                        <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                                <a class="dropdown__link" href="#">
+                                    <img class="dropdown__link-img" src="../../static/images/icons/add-user.svg" alt="Добавить пользователя"/>
+                                    <p class="dropdown__link-text">Добавить пользователя</p>
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a class="dropdown__link" href="#">
+                                    <img class="dropdown__link-img" src="../../static/images/icons/delete-user.svg" alt="Удалить пользователя"/>
+                                    <p class="dropdown__link-text">Удалить пользователя</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="messages__content">
+                <time class="messages__date">19 июня</time>
+                {{#each chat.messages}}
+                    {{> message-item}}
+                {{/each}}
+
+                <div class="message-send dropdown-container">
+                    <button class="message-send__attachment dropdown-btn">
+                        <img class="message-send__attachment-img" src="../../static/images/icons/add.svg" alt="Прикрепить вложение"
+                        />
+                    </button>
+                    <div class="dropdown dropdown--bottom-left">
+                        <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                                <a class="dropdown__link" href="#">
+                                    <img class="dropdown__link-img" src="../../static/images/icons/add-photo.svg" alt="Прикрепить фото или видео"/>
+                                    <p class="dropdown__link-text">Фото или Видео</p>
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a class="dropdown__link" href="#">
+                                    <img class="dropdown__link-img" src="../../static/images/icons/add-file.svg" alt="Прикрепить файл"/>
+                                    <p class="dropdown__link-text">Файл</p>
+                                </a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a class="dropdown__link" href="#">
+                                    <img class="dropdown__link-img" src="../../static/images/icons/add-location.svg" alt="Прикрепить локацию"/>
+                                    <p class="dropdown__link-text">Локация</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input class="message-send__field" id="message" placeholder="Сообщение">
+                    <button class="message-send__btn">
+                        <img class="message-send__btn-img" src="../../static/images/icons/arrow-back.svg" alt="Отправить сообщение"/>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </section>
+        
+    {{> modal title="Добавить пользователя" actionLabel="Добавить"}}
+    {{> modal title="Удалить пользователя" actionLabel="Удалить"}}
+    {{/content}}
+{{/extend}}

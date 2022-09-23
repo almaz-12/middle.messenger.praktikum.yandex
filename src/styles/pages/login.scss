@@ -1,0 +1,9 @@
+.login {
+  @extend %vh-centered;
+  height: 100vh;
+  
+  &__btns {
+    @extend %vh-centered;
+    margin-top: 159px;
+  }
+}

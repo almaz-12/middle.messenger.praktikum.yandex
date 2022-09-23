@@ -1,0 +1,22 @@
+{{#extend "base"}}
+    {{#content "body"}}
+        <section class="register">
+            <div class="form">
+                <h1 class="form__title">Регистрация</h1>
+                <form>
+                    {{> field label="Почта" name="email" type="text"}}           
+                    {{> field label="Логин" name="login" type="text"}}           
+                    {{> field label="Имя" name="name" type="text"}}           
+                    {{> field label="Фамилия" name="name" type="text"}}           
+                    {{> field label="Телефон" name="name" type="text"}}           
+                    {{> field label="Пароль" name="password" type="password"}} 
+                    {{> field label="Пароль (еще раз)" name="password" type="password"}} 
+                    <div class="form__btns register__btns">
+                        {{> button label="Зарегистрироваться" class="form__button"}} 
+                        {{> link label="Войти" href="./login.hbs" class=""}} 
+                    </div>        
+                </form>
+            </div>
+        </section>
+    {{/content}}
+{{/extend}}
