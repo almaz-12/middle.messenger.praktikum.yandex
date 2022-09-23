@@ -1,0 +1,7 @@
+{
+    "extends": "stylelint-config-standard-scss",
+    "rules": {
+        "string-no-newline": true,
+        "block-no-empty": true
+    }
+  }
