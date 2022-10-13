@@ -1,0 +1,41 @@
+.message-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  margin-right: auto;
+  max-width: 50%;
+  width: fit-content;
+  padding: 8px 11px;
+  color: $text-main-color;
+  font-size: 12px;
+  line-height: 15px;
+  background: $input-color;
+  border-radius: 0 10px 10px 10px;
+
+  &--my-message {
+    background: $my-message-color;
+    border-radius: 10px 10px 0 10px;
+    margin-right: 0;
+    margin-left: auto;
+
+    .message-item__time {
+      color: $time-color;
+    }
+  }
+
+  &__image {
+    background-color: $border-color;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__time {
+    margin-left: 15px;
+    color: $text-second-color;
+    font-size: 9px;
+    line-height: 9px;
+  }
+}

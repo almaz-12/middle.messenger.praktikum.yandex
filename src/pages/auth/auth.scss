@@ -1,0 +1,11 @@
+@import '../../styles/mixins.scss';
+
+.auth {
+  @extend %vh-centered !optional;
+  height: 100vh;
+  
+  &__btns {
+    @extend %vh-centered !optional;
+    margin-top: 159px;
+  }
+}
